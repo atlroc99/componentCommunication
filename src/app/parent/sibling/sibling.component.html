@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-12">
+    <p>Pass message to sibling via data service</p>
+    <label for="siblingmessage">Type a message</label>
+    <input type="text" [(ngModel)]="siblingMessage" name="sm">
+    <button class="btn btn-primary" (click)="sendMessage(siblingMessage)"> Send </button>
+
+    <p>Your message: {{yourMessage}}</p>
+
+  </div>
+</div>

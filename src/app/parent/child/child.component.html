@@ -1,0 +1,28 @@
+<div class="row">
+      <p>Hi, I am the child. {{childMessage}}</p>
+</div>
+
+<div class="row">
+      <div class="col-md-12">
+            <ul class="list-group">
+                 <a href="#" *ngFor="let i of ingredients" class=" group-list-item clearfix">
+                       {{i.name}}
+                 </a>
+            </ul>
+      </div>
+</div>
+<hr>
+<div class="row">
+      <div class="col-md-12">
+            <p>Message passed from data service</p>
+            {{message}}
+      </div>
+</div>
+
+<hr>
+<div class="row">
+      <div class="col-md-12">
+            <button (click)="getNewMessage()" class="btn btn-success">new message</button>
+            <p>your new message : {{ newMessage}}</p>
+      </div>
+</div>
